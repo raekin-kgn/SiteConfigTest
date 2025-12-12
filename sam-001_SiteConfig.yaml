@@ -2,22 +2,22 @@
 apiVersion: "ran.openshift.io/v1"
 kind: "SiteConfig"
 metadata:
-  name: "sam-name"
-  namespace: "sam-001"
+  name: "benjamin-name"
+  namespace: "benjamin-001"
 spec:
-  baseDomain: "sam-domain.com"
-  clusterImageSetNameRef: "sam-image-001"
-  sshPublicKey: "samdslfjsdkjfklsdjfkjsdklfsdfks"
+  baseDomain: "benjamin-domain.com"
+  clusterImageSetNameRef: "benjamin-image-001"
+  sshPublicKey: "benjamindslfjsdkjfklsdjfkjsdklfsdfks"
   pullSecretRef:
-    name: "sam-secret"
+    name: "benjamin-secret"
   clusters:
-  - clusterName: "sam-name"
-    extraManifestPath: "/sam/path"
+  - clusterName: "benjamin-name"
+    extraManifestPath: "/benjamin/path"
     extraManifests:
       filter:
         inclusionDefault: "exclude"
         include:
-        - "sam-extra.yaml"
+        - "benjamin-extra.yaml"
     networkType: "OVNKubernetes"
     clusterLabels:
       key-1765458184017: ""
