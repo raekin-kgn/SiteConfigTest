@@ -26,12 +26,12 @@ spec:
       location: "ankara"
       vendor: "netas"
     clusterNetwork:
-    - cidr: "10.212.122.55/23"
+    - cidr: "10.212.122.32/23"
       hostPrefix: 24
     machineNetwork:
     - cidr: "10.22.34.52/24"
     apiVIP: "10.141.109.33"
-    ingressVIP: "10.141.109.32"
+    ingressVIP: "10.141.129.32"
     serviceNetwork:
     - "10.0.0.0/24"
     additionalNTPSources:
