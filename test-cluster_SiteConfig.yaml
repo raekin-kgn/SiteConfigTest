@@ -2,17 +2,17 @@
 apiVersion: "ran.openshift.io/v1"
 kind: "SiteConfig"
 metadata:
-  name: "cluster-test-preprod"
+  name: "cluster-test-preprod-test"
   namespace: "test-cluster"
 spec:
-  baseDomain: "test-anucp-2.com"
+  baseDomain: "test-anucp-2-updated.com"
   clusterImageSetNameRef: "cluster-test-image-5"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD D1n8nRj0NfJfJ9pG0DzvN0DH7x+7rS5lVWZc0d0lTgLGH2YS0w0K5tBVkZD0g0KsO1j5zC2pF6VYi6Y0UjafvT3wGeHh7sM5aFpsdSvdF+7Iu4LThJrLb5Hn1m2FJ63pNzs4D9xmqPjR6i1WND0QTFVtM8rZ1yWRJbo5dNl1p3m7x3MpAmVQqxgR0K8sM5mU9Bz3o7ycYZttZ7a4g4mB9zZs1S8WwfkqU4Qdbp0x6Kps4pupmKL0k/cWuQsH5U/8LJbJwcE3kZ4HCxn/9dTGyPMQ6k2hCaqFAPvXOj5hXykRSPwuhDFMgEuIm2m6WxU2KnT2p0G5QXRnbW8sCiDXfQ\
     \ dummy@example"
   pullSecretRef:
     name: "secrets/cluster-secret-ref"
   clusters:
-  - clusterName: "cluster-test-preprod"
+  - clusterName: "cluster-test-preprod-test"
     extraManifestPath: "manifests/extras/"
     extraManifests:
       filter:
@@ -26,7 +26,7 @@ spec:
       location: "ankara"
       vendor: "netas"
     clusterNetwork:
-    - cidr: "10.24.52.48/23"
+    - cidr: "10.212.122.55/23"
       hostPrefix: 24
     machineNetwork:
     - cidr: "10.22.34.52/24"
