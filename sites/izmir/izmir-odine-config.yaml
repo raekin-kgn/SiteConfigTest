@@ -2,8 +2,8 @@
 apiVersion: "ran.openshift.io/v1"
 kind: "SiteConfig"
 metadata:
-  name: "anucp-cluster2"
-  namespace: "odinetest"
+  name: "anucp-cluster22"
+  namespace: "odinetest2"
 spec:
   baseDomain: "odine.com"
   clusterImageSetNameRef: "exampleImageRef"
